@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "system-inspector"
+version = "1.0.0"
+description = "A desktop GUI and CLI that shows detailed information about your Linux system"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["linux", "system", "hardware", "monitor", "gui", "tkinter"]
+classifiers = [
+  "Environment :: X11 Applications",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Topic :: System :: Monitoring",
+]
+
+[project.scripts]
+system-inspector = "system_inspector.gui:main"
+system-inspector-cli = "system_inspector.collectors:main"
+
+[tool.setuptools]
+packages = ["system_inspector"]
