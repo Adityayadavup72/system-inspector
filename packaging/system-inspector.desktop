@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=System Inspector
+GenericName=System Information
+Comment=Detailed hardware, storage, network and user information
+Exec=system-inspector
+Icon=system-inspector
+Terminal=false
+Categories=System;Monitor;
+Keywords=system;info;hardware;storage;cpu;memory;monitor;
